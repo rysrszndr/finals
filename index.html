@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PiggyWise: a simple personal budgeting guide for Filipino students and young adults.">
+  <title>PiggyWise | Personal Budget Guide</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="images/logo.svg" alt="">
+      <div class="loader-bar"><span></span></div>
+      <p>Counting your coins...</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="PiggyWise logo">
+        PiggyWise
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade-up">
+          <span class="eyebrow">Personal Budgeting Guide</span>
+          <h1>Budget smarter, <span class="mark">one peso</span> at a time.</h1>
+          <p>
+            PiggyWise helps students and young adults turn their allowance or salary
+            into a simple plan, so you always know how much to spend, how much to
+            enjoy, and how much to save.
+          </p>
+          <div class="hero-actions">
+            <a href="calculator.html" class="btn btn-lime">Try the calculator <span class="arrow">&rarr;</span></a>
+            <a href="guide.html" class="btn btn-outline">Read the guide</a>
+          </div>
+        </div>
+        <div class="hero-image fade-up delay-2">
+          <img src="images/hero-piggy.svg" alt="A piggy bank with a peso coin dropping into it" class="float">
+          <div class="badge badge-1">
+            <span class="badge-icon">&#8369;</span>
+            <span><strong>+&#8369;2,000</strong><small>saved this month</small></span>
+          </div>
+          <div class="badge badge-2">
+            <span class="badge-icon">&#10003;</span>
+            <span><strong>On track</strong><small>50 / 30 / 20</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker-wrap" aria-hidden="true">
+     <div class="ticker">
+      <div class="ticker-track"><span>50% Needs</span><span>30% Wants</span><span>20% Savings</span><span>Save first, spend later</span><span>Track every peso</span><span>Build your emergency fund</span><span>Wait 24 hours before buying</span><span>50% Needs</span><span>30% Wants</span><span>20% Savings</span><span>Save first, spend later</span><span>Track every peso</span><span>Build your emergency fund</span><span>Wait 24 hours before buying</span></div>
+     </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What PiggyWise helps you do</h2>
+          <p>
+            Budgeting isn't about saying "no" to everything. It's about knowing where your
+            money goes and choosing what matters most to you.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <img src="images/icon-track.svg" alt="" class="card-icon">
+            <h3>Track</h3>
+            <p>See where your money really goes, from daily fare and food to that extra milk tea.</p>
+          </article>
+          <article class="card reveal">
+            <img src="images/icon-plan.svg" alt="" class="card-icon">
+            <h3>Plan</h3>
+            <p>Split your money with the easy 50/30/20 rule before the month even begins.</p>
+          </article>
+          <article class="card reveal">
+            <img src="images/icon-save.svg" alt="" class="card-icon">
+            <h3>Save</h3>
+            <p>Pay yourself first and slowly build an emergency fund you can count on.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <h2>Ready to plan your month?</h2>
+            <p>Pick your monthly allowance or income and get an instant suggested breakdown.</p>
+          </div>
+          <a href="calculator.html" class="btn btn-dark">Open Calculator <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>PiggyWise</h4>
+          <p>A personal budgeting guide made for students and young adults in the Philippines.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Budgeting Guide</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Credits</h4>
+          <p>Illustrations and icons are original works by Group 3. Fonts: Poppins and Inter from Google Fonts.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PiggyWise · CC 100 Final Project · Group 3, CS-1104</span>
+        <span>Batangas State University – Alangilan</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

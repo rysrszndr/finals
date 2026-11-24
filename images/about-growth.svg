@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Savings growing like a plant from stacked coins">
+  <style>
+    .plant { animation: sway 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+    @keyframes sway { 0%,100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+    .arrow { stroke-dasharray: 320; animation: draw 3s ease-in-out infinite; }
+    @keyframes draw { 0% { stroke-dashoffset: 320; } 50%,100% { stroke-dashoffset: 0; } }
+    .sun { animation: pulse 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes pulse { 50% { transform: scale(1.12); } }
+  </style>
+
+  <rect x="0" y="0" width="480" height="360" rx="24" fill="#58C7EE"/>
+  <circle class="sun" cx="400" cy="70" r="40" fill="#C8F222"/>
+  <rect x="40" y="300" width="400" height="10" rx="5" fill="#0A0A0A" opacity="0.2"/>
+  <!-- coin stacks -->
+  <g stroke="#0A0A0A" stroke-width="5">
+    <rect x="70" y="270" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="70" y="248" width="80" height="22" rx="11" fill="#E7E0CC"/>
+
+    <rect x="170" y="270" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="170" y="248" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="170" y="226" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="170" y="204" width="80" height="22" rx="11" fill="#E7E0CC"/>
+
+    <rect x="270" y="270" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="270" y="248" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="270" y="226" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="270" y="204" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="270" y="182" width="80" height="22" rx="11" fill="#E7E0CC"/>
+    <rect x="270" y="160" width="80" height="22" rx="11" fill="#E7E0CC"/>
+  </g>
+  <!-- plant growing from top stack -->
+  <g class="plant">
+  <path d="M310 160 C310 120 300 100 310 60" fill="none" stroke="#0A0A0A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M308 110 C270 110 255 85 262 70 C290 70 308 85 308 110 Z" fill="#C8F222" stroke="#0A0A0A" stroke-width="5"/>
+  <path d="M311 82 C345 85 365 60 360 42 C330 40 312 58 311 82 Z" fill="#C8F222" stroke="#0A0A0A" stroke-width="5"/>
+  </g>
+  <!-- arrow -->
+  <path class="arrow" d="M70 200 L150 150 L210 170 L260 110" fill="none" stroke="#8B5CF6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M238 108 L262 106 L258 130" fill="none" stroke="#8B5CF6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

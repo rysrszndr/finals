@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Piggy bank with coins">
+  <style>
+    .coin { animation: drop 3.2s cubic-bezier(.5,0,.75,0) infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes drop {
+      0%   { transform: translateY(-70px) rotate(0deg); opacity: 0; }
+      15%  { opacity: 1; }
+      55%  { transform: translateY(40px) rotate(180deg); opacity: 1; }
+      62%, 100% { transform: translateY(48px) rotate(180deg) scale(.6); opacity: 0; }
+    }
+    .spark { animation: twinkle 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .spark2 { animation-delay: 1s; }
+    @keyframes twinkle { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(.5); opacity: .4; } }
+  </style>
+
+  <circle cx="240" cy="200" r="165" fill="#C8F222"/>
+  <circle cx="400" cy="70" r="26" fill="#58C7EE"/>
+  <circle cx="70" cy="330" r="18" fill="#8B5CF6"/>
+  <path class="spark" d="M60 90 l8 18 l18 8 l-18 8 l-8 18 l-8 -18 l-18 -8 l18 -8 z" fill="#F4F4F4"/>
+  <path class="spark spark2" d="M420 300 l5 11 l11 5 l-11 5 l-5 11 l-5 -11 l-11 -5 l11 -5 z" fill="#F4F4F4"/>
+  <!-- shadow -->
+  <ellipse cx="240" cy="335" rx="135" ry="14" fill="#0A0A0A" opacity="0.25"/>
+  <!-- tail -->
+  <path d="M108 225 c-30 -8 -30 -40 -6 -40 c18 0 14 24 -4 20" fill="none" stroke="#0A0A0A" stroke-width="7" stroke-linecap="round"/>
+  <!-- legs -->
+  <rect x="150" y="280" width="36" height="52" rx="10" fill="#9C5A45" stroke="#0A0A0A" stroke-width="6"/>
+  <rect x="290" y="280" width="36" height="52" rx="10" fill="#9C5A45" stroke="#0A0A0A" stroke-width="6"/>
+  <!-- ear back -->
+  <path d="M290 120 L318 85 L336 154 Z" fill="#9C5A45" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- body -->
+  <ellipse cx="240" cy="225" rx="138" ry="100" fill="#B96D55" stroke="#0A0A0A" stroke-width="7"/>
+  <!-- belly highlight -->
+  <path d="M150 210 c10 -50 50 -80 90 -80" fill="none" stroke="#E7E0CC" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <!-- ear front -->
+  <path d="M250 128 L270 78 L300 128 Z" fill="#B96D55" stroke="#0A0A0A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- snout -->
+  <ellipse cx="372" cy="225" rx="38" ry="32" fill="#E7E0CC" stroke="#0A0A0A" stroke-width="7"/>
+  <ellipse cx="360" cy="225" rx="6" ry="9" fill="#0A0A0A"/>
+  <ellipse cx="384" cy="225" rx="6" ry="9" fill="#0A0A0A"/>
+  <!-- eye & cheek -->
+  <circle cx="318" cy="182" r="9" fill="#0A0A0A"/>
+  <circle cx="321" cy="179" r="3" fill="#FFFFFF"/>
+  <ellipse cx="320" cy="242" rx="16" ry="9" fill="#E7A08A" opacity="0.8"/>
+  <!-- coin dropping -->
+  <g class="coin">
+    <ellipse cx="221" cy="72" rx="34" ry="34" fill="#E7E0CC" stroke="#0A0A0A" stroke-width="6"/>
+    <ellipse cx="221" cy="72" rx="22" ry="22" fill="none" stroke="#0A0A0A" stroke-width="3" opacity="0.5"/>
+    <text x="221" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="38" fill="#0A0A0A">₱</text>
+  </g>
+  <!-- coin slot (drawn last so the coin disappears into it) -->
+  <rect x="190" y="128" width="62" height="12" rx="6" fill="#0A0A0A"/>
+</svg>

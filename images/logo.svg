@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#C8F222"/>
+  <!-- back ear -->
+  <path d="M30 23 L34 14 L40 24 Z" fill="#B96D55" stroke="#0A0A0A" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- front ear -->
+  <path d="M38 25 L44 16 L46 29 Z" fill="#B96D55" stroke="#0A0A0A" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- head -->
+  <ellipse cx="31" cy="36" rx="17" ry="14" fill="#B96D55" stroke="#0A0A0A" stroke-width="2.5"/>
+  <!-- snout -->
+  <ellipse cx="46" cy="35" rx="6" ry="5" fill="#E7E0CC" stroke="#0A0A0A" stroke-width="2.5"/>
+  <!-- nostrils -->
+  <circle cx="44.5" cy="35" r="1.2" fill="#0A0A0A"/>
+  <circle cx="47.5" cy="35" r="1.2" fill="#0A0A0A"/>
+  <!-- eye -->
+  <circle cx="36" cy="30" r="2" fill="#0A0A0A"/>
+  <rect x="24" y="22" width="10" height="3" rx="1.5" fill="#0A0A0A"/>
+</svg>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind PiggyWise and learn about our mission and vision.">
+  <title>About Us | PiggyWise</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="images/logo.svg" alt="">
+      <div class="loader-bar"><span></span></div>
+      <p>Counting your coins...</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="PiggyWise logo">
+        PiggyWise
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade-up">
+          <span class="eyebrow">About Us</span>
+          <h1>Making money talk <span class="mark">less scary.</span></h1>
+          <p>
+            PiggyWise started as our CC 100 final project at Batangas State University. Many of
+            us get our first allowance or salary without ever learning how to manage it, so we
+            built a simple guide we wish we had: clear, friendly, and made for Filipino students
+            and young adults.
+          </p>
+        </div>
+        <div class="hero-image fade-up delay-2">
+          <img src="images/about-growth.svg" alt="Stacks of coins growing taller with a small plant on top">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card mv-card reveal">
+            <img src="images/icon-plan.svg" alt="" class="card-icon">
+            <h3>Mission</h3>
+            <p>
+              To teach students and young adults simple, practical budgeting habits that help them
+              spend wisely, save consistently, and feel in control of their money.
+            </p>
+          </article>
+          <article class="card mv-card reveal">
+            <img src="images/icon-save.svg" alt="" class="card-icon">
+            <h3>Vision</h3>
+            <p>
+              A generation of financially confident Filipinos who plan before they spend and who
+              are always ready for life's surprises.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Meet the team</h2>
+          <p>Group 3 · CS-1104 · College of Informatics and Computing Sciences</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="team-card reveal">
+            <img src="images/member-1.svg" alt="Photo of Mary Jane G. Borreo">
+            <h3>Mary Jane G. Borreo</h3>
+            <p class="role">UI Designer</p>
+            <p class="code">SR-Code 26-03940</p>
+          </article>
+          <article class="team-card reveal">
+            <img src="images/member-2.svg" alt="Photo of Martin Lorence S. Pablo">
+            <h3>Martin Lorence S. Pablo</h3>
+            <p class="role">Content Writer</p>
+            <p class="code">SR-Code 26-08097</p>
+          </article>
+          <article class="team-card reveal">
+            <img src="images/member-3.svg" alt="Photo of Ariszander Christian G. Reyes">
+            <h3>Ariszander Christian G. Reyes</h3>
+            <p class="role">Main Developer</p>  
+            <p class="code">SR-Code 26-08211</p>
+          </article>
+        </div>
+
+        <div class="contact reveal" id="contact">
+          <div>
+            <h2>Contact us</h2>
+            <p>Questions, suggestions, or budgeting tips to share? We'd love to hear from you.</p>
+            <ul class="contact-list">
+              <li>Email: <a href="mailto:piggywise@gmail.com">piggywise@gmail.com</a></li>
+              <li>Location: BatStateU Alangilan, Batangas City</li>
+              <li>Section: CS-1104</li>
+            </ul>
+          </div>
+          <form class="form" action="#">
+            <label>Name
+              <input type="text" placeholder="Juan Dela Cruz">
+            </label>
+            <label>Email
+              <input type="email" placeholder="you@example.com">
+            </label>
+            <label>Message
+              <textarea rows="4" placeholder="Write your message here..."></textarea>
+            </label>
+            <button type="button" class="btn btn-lime">Send message <span class="arrow">&rarr;</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>PiggyWise</h4>
+          <p>A personal budgeting guide made for students and young adults in the Philippines.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Budgeting Guide</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Credits</h4>
+          <p>Illustrations and icons are original works by Group 3. Fonts: Poppins and Inter from Google Fonts.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PiggyWise · CC 100 Final Project · Group 3, CS-1104</span>
+        <span>Batangas State University – Alangilan</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

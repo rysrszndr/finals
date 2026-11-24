@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a suggested 50/30/20 budget breakdown for your monthly allowance or income.">
+  <title>Budget Calculator | PiggyWise</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="images/logo.svg" alt="">
+      <div class="loader-bar"><span></span></div>
+      <p>Counting your coins...</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="PiggyWise logo">
+        PiggyWise
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="calculator.html" class="active">Calculator</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="calc-section">
+      <div class="container">
+        <!--
+          How this works WITHOUT JavaScript:
+          Each amount is a hidden radio button. Clicking a <label> checks its radio,
+          and the CSS selector  #amt-5000:checked ~ .result-card .r-5000  shows the
+          matching pre-computed breakdown. Only one radio in a group can be checked.
+        -->
+        <div class="calc">
+        <input type="radio" name="amount" id="amt-3000">
+        <input type="radio" name="amount" id="amt-5000">
+        <input type="radio" name="amount" id="amt-8000">
+        <input type="radio" name="amount" id="amt-10000">
+        <input type="radio" name="amount" id="amt-15000">
+        <input type="radio" name="amount" id="amt-20000">
+
+          <div class="calc-card fade-up">
+            <span class="eyebrow eyebrow-violet">Budget Calculator</span>
+            <h1>Magkano ang pera mo?</h1>
+            <p>Choose your monthly allowance or income to see a suggested 50/30/20 breakdown.</p>
+            <div class="chips">
+            <label for="amt-3000">₱3,000</label>
+            <label for="amt-5000">₱5,000</label>
+            <label for="amt-8000">₱8,000</label>
+            <label for="amt-10000">₱10,000</label>
+            <label for="amt-15000">₱15,000</label>
+            <label for="amt-20000">₱20,000</label>
+            </div>
+          </div>
+
+          <div class="result-card fade-up delay-1">
+          <div class="result result-empty">
+            <p class="result-title">Your suggested breakdown</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱ ___</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱ ___</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱ ___</span></li>
+            </ul>
+            <p class="daily">Pick an amount above to see your daily spending limit for wants.</p>
+          </div>
+
+          <div class="result r-3000">
+            <p class="result-title">Your suggested breakdown for ₱3,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱1,500</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱900</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱600</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱30 a day</strong> for wants, and <strong>₱7,200</strong> saved after one year.</p>
+          </div>
+
+          <div class="result r-5000">
+            <p class="result-title">Your suggested breakdown for ₱5,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱2,500</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱1,500</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱1,000</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱50 a day</strong> for wants, and <strong>₱12,000</strong> saved after one year.</p>
+          </div>
+
+          <div class="result r-8000">
+            <p class="result-title">Your suggested breakdown for ₱8,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱4,000</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱2,400</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱1,600</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱80 a day</strong> for wants, and <strong>₱19,200</strong> saved after one year.</p>
+          </div>
+
+          <div class="result r-10000">
+            <p class="result-title">Your suggested breakdown for ₱10,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱5,000</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱3,000</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱2,000</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱100 a day</strong> for wants, and <strong>₱24,000</strong> saved after one year.</p>
+          </div>
+
+          <div class="result r-15000">
+            <p class="result-title">Your suggested breakdown for ₱15,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱7,500</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱4,500</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱3,000</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱150 a day</strong> for wants, and <strong>₱36,000</strong> saved after one year.</p>
+          </div>
+
+          <div class="result r-20000">
+            <p class="result-title">Your suggested breakdown for ₱20,000</p>
+            <div class="bar"><span class="b-needs"></span><span class="b-wants"></span><span class="b-savings"></span></div>
+            <ul class="breakdown">
+              <li><span><span class="dot dot-needs"></span>Needs · 50%</span><span class="money">₱10,000</span></li>
+              <li><span><span class="dot dot-wants"></span>Wants · 30%</span><span class="money">₱6,000</span></li>
+              <li><span><span class="dot dot-savings"></span>Savings · 20%</span><span class="money">₱4,000</span></li>
+            </ul>
+            <p class="daily">That's about <strong>₱200 a day</strong> for wants, and <strong>₱48,000</strong> saved after one year.</p>
+          </div>
+          </div>
+
+          <p class="calc-note">
+            Different amount? Multiply it by <code>0.50</code> for needs,
+            <code>0.30</code> for wants, and <code>0.20</code> for savings.
+            Not sure what counts as a need? <a href="guide.html">Read the guide</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>PiggyWise</h4>
+          <p>A personal budgeting guide made for students and young adults in the Philippines.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Budgeting Guide</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Credits</h4>
+          <p>Illustrations and icons are original works by Group 3. Fonts: Poppins and Inter from Google Fonts.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PiggyWise · CC 100 Final Project · Group 3, CS-1104</span>
+        <span>Batangas State University – Alangilan</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
